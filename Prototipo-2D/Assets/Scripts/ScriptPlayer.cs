@@ -4,10 +4,10 @@ using UnityEngine;
 
 public class ScriptPlayer : MonoBehaviour {
 
-    public float speed;
+    public float speed = 1;
 
-	// Use this for initialization
-	void Start () {
+    // Use this for initialization
+    void Start () {
 		
 	}
 	
