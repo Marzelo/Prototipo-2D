@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 
 public class ScriptNivelSig : MonoBehaviour {
-    
+
     public static int nivel;
 
     // Use this for initialization

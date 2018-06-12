@@ -6,10 +6,12 @@ public class ScriptPlayer : MonoBehaviour {
 
     public float speed = 1;
     public Rigidbody2D rigidbody2D;
+    Vector3 initialPos;
 
     // Use this for initialization
     void Start () {
-	}
+        initialPos = transform.position;
+    }
 
     // Update is called once per frame
     void Update(){
@@ -29,4 +31,8 @@ public class ScriptPlayer : MonoBehaviour {
         rigidbody2D.MovePosition(movement);
     }
 
+    public void ResetPosition()
+    {
+        transform.position = initialPos;
+    }
 }
