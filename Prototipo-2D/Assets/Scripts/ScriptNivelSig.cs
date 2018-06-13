@@ -22,7 +22,7 @@ public class ScriptNivelSig : MonoBehaviour {
         }
 
         int currentIndex = SceneManager.GetActiveScene().buildIndex;
-        if (CheckCount())
+        if (CheckNivel())
         {
             if (currentIndex < SceneManager.sceneCountInBuildSettings - 1)
             {
@@ -36,12 +36,12 @@ public class ScriptNivelSig : MonoBehaviour {
         Destroy(gameObject);
     }
 
-    bool CheckCount()
+    bool CheckNivel()
     {
         return nivel == 0;
     }
 
-    public static void ResetCount()
+    public static void ResetNivel()
     {
         nivel = 0;
     }

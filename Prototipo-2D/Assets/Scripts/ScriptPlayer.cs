@@ -2,15 +2,15 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+
 public class ScriptPlayer : MonoBehaviour {
 
     public float speed = 1;
     public Rigidbody2D rigidbody2D;
-    Vector3 initialPos;
 
     // Use this for initialization
     void Start () {
-        initialPos = transform.position;
+        
     }
 
     // Update is called once per frame
@@ -29,10 +29,5 @@ public class ScriptPlayer : MonoBehaviour {
             movement += Vector3.right * speed * Time.deltaTime;
         }
         rigidbody2D.MovePosition(movement);
-    }
-
-    public void ResetPosition()
-    {
-        transform.position = initialPos;
     }
 }
